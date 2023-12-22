@@ -1,0 +1,29 @@
+{
+  "name": "hash-256-generator",
+  "version": "1.0.0",
+  "description": "this is a generator that generator hash-256 values with input file",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder --win"
+  },
+  "author": "BlockChain Security Corp.",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.2.0",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "save": "^2.9.0"
+  },
+  "build": {
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "include": "./dist./win-unpacked"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+div.dataTables_wrapper { min-height: 300px; }
+.button {
+    padding: 4px 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    border-width: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+table.dataTable thead tr {
+    background-color: #C2E9E8;
+}
+
+#fileInputButton {
+    margin-right: 35px;
+    margin-left: 10px;
+    transform: translate(0%, 135%);
+    margin-bottom: 10px; 
+    color: white;  
+    background-color: #00A29A;
+    border: none;
+    z-index: 1;
+}
+
+#DeleteAllButton {
+    transform: translate(0%, 135%);
+    margin-bottom: 10px; 
+    color: #48D1CC; 
+    color: white;  
+    background-color: #00A29A;
+    border: none;
+    z-index: 1;
+}
+
+#searchbtn {
+    transform: translate(700%, 4%);
+    margin-bottom: 10px; 
+    color: #48D1CC; 
+    color: white;  
+    background-color: #00A29A;
+    border: none;
+    height: 30px;
+}
+
+div.dataTables_filter input {
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    transform: translate(0%, -130%);
+    left: 0%;
+    right: 100%;
+    text-align: right;
+}
+
+div.dataTables_filter input::-webkit-search-cancel-button {
+    -webkit-appearance: none!important;
+  }
+
+.empty_table {
+    height: 100%;
+}
+
+.search_image {
+    background-image: url('./images/search.svg');
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    background-position: 3%;
+}
+
+.empty_image {
+    width: 80px;
+    height: 50px;
+}
+
+.empty_text {
+    color: #BEBEBE;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+table.dataTable.no-footer {
+    border: 1px solid #C2E9E8 !important;
+}
+
+.dataTables_scrollBody {
+    border-bottom: 2px solid #C2E9E8 !important;
+    border-left: 2px solid #C2E9E8 !important;
+    border-right: 2px solid #C2E9E8 !important;
+    background-color: var(--gray1, #F7F7F7);
+    /* background-color: blue; */
+}
+
+
+table.dataTable thead th {
+    border: 0.8px solid #C2E9E8 !important;
+    color: var(--gray8, #434343) !important;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.dataTables_scrollHead {
+    border: 2px solid #C2E9E8 !important;
+}
+
+table.dataTable tbody tr td {
+    background-color: white;
+    border-color: #DEDEDE !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--gray8, #434343) !important;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.delete-button {
+    background-color: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table.dataTable .dataTables_empty {
+    background-color: var(--gray1, #F7F7F7);
+}
+
+.paginate_button.current {
+    background-color: rgba(194, 233, 232, 0.30) !important;
+}
+
+#display-info {
+    color: #666;
+}

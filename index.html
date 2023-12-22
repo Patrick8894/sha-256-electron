@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHA-256 本機端計算工具</title>
+</head>
+<body>
+    <h1 style="text-align: center;">計算SHA-256</h1>
+    <div style="display: flex; flex-direction: row-reverse;">
+        <input type="file" id="fileInput"  multiple hidden>
+        <button id="fileInputButton" class="button">選擇檔案</button>
+        <button id="DeleteAllButton" class="button">清除全部</button>
+    </div>
+    <div id="table_container" class="table_container" style="height: 100%; width: 95%; transform: translate(2.5%)">
+        <button id="searchbtn" class="button">搜尋</button>
+        <table id="myTable" class="cell-border  empty_table" style="width: 100%; border: 1px solid;">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>檔名</th>
+                    <th>SHA-256雜湊值</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>    -->
+                    <!-- <td>項目</td>
+                    <td>檔名</td>
+                    <td>SHA-256雜湊值</td> -->
+                <!-- </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <div id="display-info" style="margin-top: -30px; margin-left: 40px;">
+        <!-- <button id="chooseFileButton" class="button" style="margin-bottom: 10px; background-color: #00A29A; color: white; border: none;">驗證</button> -->
+    </div>
+    <script>
+        if (typeof module === 'object') {window.module = module; module = undefined;}
+    </script>
+    <!-- <script src="jquery-3.7.1.min.js" type="text/javascript"></script> -->
+    <!-- <script>window.$ = window.jQuery = require('./jquery-3.7.1.min.js');</script> -->
+    <!-- <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="./jquery-3.7.1.min.js" type="text/javascript"></script>
+
+
+    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet"/> -->
+    
+    <script src="./js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <link href="./css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <script>if (window.module) module = window.module;</script>
+    <!-- <script>
+        console.log(typeof jQuery)
+        $('#chooseFileButton').hide()
+        let table = new DataTable("#myTable")
+    </script> -->
+    <script type="module" src="index.js"></script>
+</body>
+</html>
